@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluation Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h2>Evaluation Result</h2>
+    
+    <div class="result">
+        <h3>Extracted Text:</h3>
+        <p>{{ extracted_text }}</p>
+
+        <h3>Corrected Text:</h3>
+        <p>{{ corrected_text }}</p>
+
+        <h3>Score:</h3>
+        <p>{{ score }}</p>
+    </div>
+
+    <div class="form-container">
+        <a href="/">Upload Another</a>
+    </div>
+</body>
+</html>
